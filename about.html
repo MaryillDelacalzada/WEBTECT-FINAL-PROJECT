@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Bake & Bliss</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --pink-main: #ff8fab;
+      --pink-dark: #ff4f79;
+      --bg-light: #ffe6ed;
+      --font-primary: 'Poppins', sans-serif;
+      --font-logo: 'Fredoka One', cursive;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      margin: 0;
+      background-color: var(--bg-light);
+      color: #444;
+      scroll-behavior: smooth;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--pink-main);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 80px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-family: var(--font-logo);
+      font-size: 26px;
+      color: white;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      margin-left: 40px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ffeef4;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #ffd1dc;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-family: var(--font-logo);
+      color: var(--pink-dark);
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    /* Story Section */
+    .story {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      padding: 80px 60px;
+      background-color: white;
+    }
+
+    .story-text {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    .story-img {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .story-img img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Team Section */
+    .team {
+      background-color: #ffe6eb;
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .team h2 {
+      font-family: var(--font-logo);
+      color: var(--pink-dark);
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .team-member {
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .team-member img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid var(--pink-dark);
+    }
+
+    .team-member h3 {
+      color: var(--pink-dark);
+      font-size: 18px;
+      margin-top: 15px;
+    }
+
+    .team-member p {
+      color: #555;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--pink-main);
+      text-align: center;
+      color: white;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+
+<body>
+    
+  <!-- Header -->
+  <!-- ✅ UNIVERSAL HEADER FOR ALL PAGES -->
+<header>
+  <div class="logo">Bake & Bliss</div>
+  <nav>
+    <a href="homepage.html" class="nav-link">Home</a>
+    <a href="shop.html" class="nav-link">Shop</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<style>
+  :root {
+    --pink-main: #ff8fab;
+    --pink-dark: #ff4f79;
+    --font-primary: 'Poppins', sans-serif;
+    --font-logo: 'Fredoka One', cursive;
+  }
+
+  /* ✅ Header Base Styling */
+  header {
+    background-color: var(--pink-main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    font-family: var(--font-logo);
+    font-size: 26px;
+    color: white;
+    letter-spacing: 1px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    margin-left: 40px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #ffeef4;
+  }
+
+  /* ✅ Highlight current page */
+  nav a.active {
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+    color: #fff;
+  }
+
+  /* ✅ Responsive Header */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 10px;
+      font-size: 15px;
+    }
+  }
+</style>
+
+
+  <!-- Team Section FIRST -->
+  <section class="team" id="team">
+    <h2>Meet Our Sweet Team 💖</h2>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="img/member1.jpg" alt="Team Member 1">
+        <h3>Delacalzada</h3>
+        <p>Pastry Specialist</p>
+      </div>
+      <div class="team-member">
+        <img src="img/member2.jpg" alt="Team Member 2">
+        <h3>Alberca</h3>
+        <p>Cake Designer</p>
+      </div>
+      <div class="team-member">
+        <img src="img/member3.jpg" alt="Team Member 3">
+        <h3>Manlosa</h3>
+        <p>Decor Expert</p>
+      </div>
+      <div class="team-member">
+        <img src="img/member4.jpg" alt="Team Member 4">
+        <h3>Polar</h3>
+        <p>Marketing Manager</p>
+      </div>
+      <div class="team-member">
+        <img src="img/member5.jpg" alt="Team Member 5">
+        <h3>Cagadas</h3>
+        <p>Product Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>About Bake & Bliss 🍰</h1>
+    <p>
+      At <strong>Bake & Bliss</strong>, we believe every day deserves a little sweetness. 
+      What started as a small dream has grown into a passion for creating treats 
+      that bring smiles to every table. Every cake, pastry, and cookie we bake is 
+      crafted with love — because happiness tastes better when shared.
+    </p>
+  </section>
+
+  <!-- Story Section -->
+  <section class="story">
+    <div class="story-text">
+      <p>
+        From humble beginnings, our bakery was founded with a simple idea: 
+        to turn everyday moments into delightful experiences. 
+        We pour our hearts into each recipe, blending quality ingredients, 
+        creativity, and a dash of love. Whether it’s your morning coffee companion 
+        or a centerpiece for celebration, our creations are made to brighten your day.
+      </p>
+    </div>
+    <div class="story-img">
+      <img src="img/about-bakery.jpg" alt="Baking together">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Bake & Bliss — Sweetly Made for You 🍰
+  </footer>
+
+</body>
+</html>

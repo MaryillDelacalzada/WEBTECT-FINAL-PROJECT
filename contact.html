@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bake & Bliss</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="stylepoint.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-cookie-bite me-2"></i>Bake & Bliss
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Page Content -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h1 class="section-title">Contact Us</h1>
+                <p class="lead">We'd love to hear from you! Send us a message and we'll respond as soon as possible.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <div class="contact-form">
+                    <h3 class="mb-4 contact-heading">Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-4">
+                <div class="contact-info">
+                    <h3 class="mb-4 contact-heading">Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt contact-icon"></i> 123 Sweet Street, Dessert City</p>
+                    <p><i class="fas fa-phone contact-icon"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope contact-icon"></i> hello@bakeandbliss.com</p>
+
+                    <h4 class="mt-4 contact-heading">Follow Us</h4>
+                    <div class="social-buttons">
+                        <a href="#" class="contact-btn"><i class="fab fa-facebook me-1"></i> Facebook</a>
+                        <a href="#" class="contact-btn"><i class="fab fa-instagram me-1"></i> Instagram</a>
+                        <a href="#" class="contact-btn"><i class="fab fa-twitter me-1"></i> Twitter</a>
+                    </div>
+
+                    <h4 class="mt-4 contact-heading">Store Hours</h4>
+                    <p>Mon–Fri: 8 AM – 8 PM</p>
+                    <p>Saturday: 9 AM – 6 PM</p>
+                    <p>Sunday: 10 AM – 4 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container text-center">
+            <p>&copy; 2023 Bake & Bliss. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS Link -->
+    <script src="newstyle.js"></script>
+</body>
+</html>
